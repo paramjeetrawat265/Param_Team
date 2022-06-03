@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width:90%;
+            margin:auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap:20px;
+        }
+        #main>div{
+            width:90%;
+            font-size: 25px;
+        }
+        h2+p{
+            margin:-10px 0px -10px 0px;
+            font-size: 30px;
+            color:grey
+        }
+        
+        p+div{
+            display:flex;
+            font-size: 30px;
+            /* justify-content: space-evenly; */
+        }
+        div>p:nth-child(2){
+            color:gray;
+            text-decoration: line-through;
+            margin-left:10px;
+        }
+        p+p+p{
+            color:#10ad64;
+            margin-left:10px
+        }
+        img{
+            width:80%;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <img src="image/pause.png" alt="">
+            <h2>Pause</h2>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div>
+                <p>₹359</p>
+                <p>₹ 1,499</p>
+                <p>-76%</p>
+            </div>
+        </div>
+        <div>
+            <img src="image/jubination.png" alt="">
+            <h2>JUBINATION</h2>
+            <p>Men Wool Sleeveless Sweater Pack Of 1</p>
+            <div>
+                <p>₹799</p>
+                <p>₹1,499</p>
+                <p>-47%</p>
+            </div>
+        </div>
+</div>
+</body>
+</html>
